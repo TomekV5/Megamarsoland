@@ -40,7 +40,7 @@ namespace Marsogrom
         }
         public TypesLand()
         {
-            this.Name=" ";
+            this.Name="E";
             Coal = 0;
             Iron = 0;
             Concreat = 0;
