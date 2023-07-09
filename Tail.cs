@@ -40,7 +40,7 @@ namespace Marsogrom
         }
         public Tail()
         {
-            Name = " ";
+            Name = ":";
             Coal = false;
             Iron = false;
             Concreat = false;

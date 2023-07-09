@@ -13,9 +13,9 @@ namespace Marsogrom
         {
             this.Name = "H";
             Coal = Random.Next(1, 6); ;
-            Iron = Random.Next(8, 14); ;
-            Concreat = Random.Next(8, 14);
-            Water = Random.Next(1, 4);
+            Iron = Random.Next(40, 49); ;
+            Concreat = Random.Next(40, 49);
+            Water = Random.Next(25, 31);
         }
     }
 }
