@@ -12,10 +12,10 @@ namespace Marsogrom
         public Cold() 
         {
             this.Name = "C";
-            Coal = Random.Next(8, 14);
-            Iron = Random.Next(1, 6);
-            Concreat = Random.Next(1, 6);
-            Water = Random.Next(8, 14);
+            Coal = Random.Next(40, 49);
+            Iron = Random.Next(25, 41);
+            Concreat = Random.Next(25, 41);
+            Water = Random.Next(40, 49);
         }
     }
 }
