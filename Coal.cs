@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Marsogrom
+namespace MX3
 {
     class Coal:Tail
     {
         public Coal()
         {
             Name = "Coal";
-            Coal = true;
-            Iron = false;
-            Concreat = false;
-            Water = false;
+            Coal = 1;
+            Iron = 0;
+            Concreat = 0;
+            Water = 0;
         }
     }
 }

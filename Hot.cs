@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Marsogrom
+namespace MX3
 {
     class Hot : TypesLand
     {

@@ -4,31 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Marsogrom
+namespace MX3
 {
-    class Tail
+    public class Tail
     {
-        private bool coal;
-        private bool iron;
-        private bool concreat;
-        private bool water;
+        private double coal;
+        private double iron;
+        private double concreat;
+        private double water;
         private string name;
-        public bool Coal
+        public double Coal
         {
             get { return coal; }
             set { coal = value; }
         }
-        public bool Iron
+        public double Iron
         {
             get { return iron; }
             set { iron = value; }
         }
-        public bool Concreat
+        public double Concreat
         {
             get { return concreat; }
             set { concreat = value; }
         }
-        public bool Water
+        public double Water
         {
             get { return water; }
             set { water = value; }
@@ -41,18 +41,18 @@ namespace Marsogrom
         public Tail()
         {
             Name = ":";
-            Coal = false;
-            Iron = false;
-            Concreat = false;
-            Water = false;
+            Coal = 0;
+            Iron = 0;
+            Concreat = 0;
+            Water = 0;
         }
-        public void Introduse()
-        {
-            Console.WriteLine($"Terain: {this.GetType().Name}");
-            Console.WriteLine($"-coal: {this.Coal}");
-            Console.WriteLine($"-iron: {this.Iron}");
-            Console.WriteLine($"-concreat: {this.Concreat}");
-            Console.WriteLine($"-water: {this.Water}");
-        }
+        //public void Introduse()
+        //{
+        //    Console.WriteLine($"Terain: {this.GetType().Name}");
+        //    Console.WriteLine($"-coal: {this.Coal}");
+        //    Console.WriteLine($"-iron: {this.Iron}");
+        //    Console.WriteLine($"-concreat: {this.Concreat}");
+        //    Console.WriteLine($"-water: {this.Water}");
+        //}
     }
 }
