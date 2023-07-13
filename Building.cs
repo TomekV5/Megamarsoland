@@ -15,7 +15,7 @@ namespace MX2
                 Name = "🚀";
                 Coal = 20;
                 Iron = 15;
-                Concreat = 0;
+                Concreat = 20;
                 Water = 20;
             }
             else if (type == "Solar Panel")

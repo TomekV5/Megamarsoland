@@ -8,23 +8,23 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Zala2\\.nuget\\packages\\": {}
+    "C:\\Users\\VAS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zala2\\source\\repos\\MX2\\MX2\\MX2.csproj",
+      "projectUniqueName": "D:\\visi stidion\\MX2\\MX2\\MX2\\MX2.csproj",
       "projectName": "MX2",
-      "projectPath": "C:\\Users\\Zala2\\source\\repos\\MX2\\MX2\\MX2.csproj",
-      "packagesPath": "C:\\Users\\Zala2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zala2\\source\\repos\\MX2\\MX2\\obj\\",
+      "projectPath": "D:\\visi stidion\\MX2\\MX2\\MX2\\MX2.csproj",
+      "packagesPath": "C:\\Users\\VAS\\.nuget\\packages\\",
+      "outputPath": "D:\\visi stidion\\MX2\\MX2\\MX2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Zala2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "net5.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -63,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

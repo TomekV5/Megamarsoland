@@ -13,7 +13,7 @@ namespace MX2
 {
     public partial class mapOfMars : Form
     {
-        public static int buifingcon=0;
+        public static int buifingcon = 0;
         public static Tail[,,,] tails = new Tail[26, 26, 3, 3];
         public static int x;
         public static int y;
@@ -76,7 +76,7 @@ namespace MX2
                 }
                 temp += "\n";
             }
-            table.Text = temp;       
+            table.Text = temp;
         }
         public static void Randomize(Tail[,,,] arr, int n, int x, int q, int y)
         {
@@ -188,7 +188,7 @@ namespace MX2
                     }
                 }
             }
-            Plotmapcs plotmapcs = new Plotmapcs(1000,20,20,20,20);
+            Plotmapcs plotmapcs = new Plotmapcs(1000, 20, 20, 20, 20);
             plotmapcs.ShowDialog();
             Close();
         }

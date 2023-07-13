@@ -21,3 +21,26 @@ C:\Users\Zala2\source\repos\MX2\MX2\obj\Debug\net5.0-windows\MX2.pdb
 C:\Users\Zala2\source\repos\MX2\MX2\obj\Debug\net5.0-windows\MX2.genruntimeconfig.cache
 C:\Users\Zala2\source\repos\MX2\MX2\obj\Debug\net5.0-windows\MX2.Properties.Resources.resources
 C:\Users\Zala2\source\repos\MX2\MX2\obj\Debug\net5.0-windows\MX2.End.resources
+D:\visi stidion\MX2\MX2\MX2\bin\Debug\net5.0-windows\MX2.exe
+D:\visi stidion\MX2\MX2\MX2\bin\Debug\net5.0-windows\MX2.deps.json
+D:\visi stidion\MX2\MX2\MX2\bin\Debug\net5.0-windows\MX2.runtimeconfig.json
+D:\visi stidion\MX2\MX2\MX2\bin\Debug\net5.0-windows\MX2.runtimeconfig.dev.json
+D:\visi stidion\MX2\MX2\MX2\bin\Debug\net5.0-windows\MX2.dll
+D:\visi stidion\MX2\MX2\MX2\bin\Debug\net5.0-windows\MX2.pdb
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.csproj.AssemblyReference.cache
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.Buy.resources
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.End.resources
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.mapOfMars.resources
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.Plotmapcs.resources
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.Properties.Resources.resources
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.SmalPlot.resources
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.csproj.GenerateResource.cache
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.GeneratedMSBuildEditorConfig.editorconfig
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.AssemblyInfoInputs.cache
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.AssemblyInfo.cs
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.csproj.CoreCompileInputs.cache
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.dll
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\refint\MX2.dll
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.pdb
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\MX2.genruntimeconfig.cache
+D:\visi stidion\MX2\MX2\MX2\obj\Debug\net5.0-windows\ref\MX2.dll

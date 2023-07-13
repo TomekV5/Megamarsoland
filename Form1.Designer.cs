@@ -29,229 +29,263 @@ namespace MX2
         /// </summary>
         private void InitializeComponent()
         {
-            this.confirm = new System.Windows.Forms.Button();
-            this.next = new System.Windows.Forms.Button();
-            this.rece = new System.Windows.Forms.Button();
-            this.c = new System.Windows.Forms.TextBox();
-            this.l = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numbers = new System.Windows.Forms.Label();
-            this.table = new System.Windows.Forms.Label();
-            this.tpln = new System.Windows.Forms.Label();
-            this.ironc = new System.Windows.Forms.Label();
-            this.coalc = new System.Windows.Forms.Label();
-            this.concreatc = new System.Windows.Forms.Label();
-            this.waterc = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            confirm = new System.Windows.Forms.Button();
+            next = new System.Windows.Forms.Button();
+            rece = new System.Windows.Forms.Button();
+            c = new System.Windows.Forms.TextBox();
+            l = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            numbers = new System.Windows.Forms.Label();
+            table = new System.Windows.Forms.Label();
+            tpln = new System.Windows.Forms.Label();
+            ironc = new System.Windows.Forms.Label();
+            coalc = new System.Windows.Forms.Label();
+            concreatc = new System.Windows.Forms.Label();
+            waterc = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label7 = new System.Windows.Forms.Label();
+            label8 = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // confirm
             // 
-            this.confirm.Location = new System.Drawing.Point(904, 193);
-            this.confirm.Name = "confirm";
-            this.confirm.Size = new System.Drawing.Size(116, 51);
-            this.confirm.TabIndex = 5;
-            this.confirm.Text = "Confirm";
-            this.confirm.UseVisualStyleBackColor = true;
-            this.confirm.Click += new System.EventHandler(this.confirm_Click);
+            confirm.BackColor = System.Drawing.Color.DeepSkyBlue;
+            confirm.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            confirm.Location = new System.Drawing.Point(904, 193);
+            confirm.Name = "confirm";
+            confirm.Size = new System.Drawing.Size(116, 51);
+            confirm.TabIndex = 5;
+            confirm.Text = "Confirm";
+            confirm.UseVisualStyleBackColor = false;
+            confirm.Click += confirm_Click;
             // 
             // next
             // 
-            this.next.Location = new System.Drawing.Point(979, 128);
-            this.next.Name = "next";
-            this.next.Size = new System.Drawing.Size(103, 59);
-            this.next.TabIndex = 3;
-            this.next.Text = "Show";
-            this.next.UseVisualStyleBackColor = true;
-            this.next.Click += new System.EventHandler(this.next_Click);
+            next.BackColor = System.Drawing.Color.DeepSkyBlue;
+            next.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            next.Location = new System.Drawing.Point(979, 128);
+            next.Name = "next";
+            next.Size = new System.Drawing.Size(103, 59);
+            next.TabIndex = 3;
+            next.Text = "Show";
+            next.UseVisualStyleBackColor = false;
+            next.Click += next_Click;
             // 
             // rece
             // 
-            this.rece.Location = new System.Drawing.Point(851, 128);
-            this.rece.Name = "rece";
-            this.rece.Size = new System.Drawing.Size(103, 59);
-            this.rece.TabIndex = 4;
-            this.rece.Text = "Reset";
-            this.rece.UseVisualStyleBackColor = true;
-            this.rece.Click += new System.EventHandler(this.rece_Click);
+            rece.BackColor = System.Drawing.Color.DeepSkyBlue;
+            rece.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            rece.Location = new System.Drawing.Point(851, 128);
+            rece.Name = "rece";
+            rece.Size = new System.Drawing.Size(103, 59);
+            rece.TabIndex = 4;
+            rece.Text = "Reset";
+            rece.UseVisualStyleBackColor = false;
+            rece.Click += rece_Click;
             // 
             // c
             // 
-            this.c.Location = new System.Drawing.Point(979, 50);
-            this.c.Name = "c";
-            this.c.Size = new System.Drawing.Size(100, 30);
-            this.c.TabIndex = 1;
+            c.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            c.Location = new System.Drawing.Point(979, 50);
+            c.Name = "c";
+            c.Size = new System.Drawing.Size(100, 36);
+            c.TabIndex = 1;
             // 
             // l
             // 
-            this.l.Location = new System.Drawing.Point(979, 87);
-            this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(100, 30);
-            this.l.TabIndex = 2;
+            l.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            l.Location = new System.Drawing.Point(979, 87);
+            l.Name = "l";
+            l.Size = new System.Drawing.Size(100, 36);
+            l.TabIndex = 2;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(824, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 22);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Write column:";
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Location = new System.Drawing.Point(792, 52);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(181, 28);
+            label1.TabIndex = 5;
+            label1.Text = "Write column:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(824, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 22);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Write rows:";
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label2.Location = new System.Drawing.Point(792, 89);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(155, 28);
+            label2.TabIndex = 6;
+            label2.Text = "Write rows:";
             // 
             // numbers
             // 
-            this.numbers.AutoSize = true;
-            this.numbers.Location = new System.Drawing.Point(26, 74);
-            this.numbers.Name = "numbers";
-            this.numbers.Size = new System.Drawing.Size(70, 22);
-            this.numbers.TabIndex = 7;
-            this.numbers.Text = "label3";
+            numbers.AutoSize = true;
+            numbers.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            numbers.Location = new System.Drawing.Point(56, 72);
+            numbers.Name = "numbers";
+            numbers.Size = new System.Drawing.Size(70, 22);
+            numbers.TabIndex = 7;
+            numbers.Text = "label3";
             // 
             // table
             // 
-            this.table.AutoSize = true;
-            this.table.Location = new System.Drawing.Point(93, 50);
-            this.table.Name = "table";
-            this.table.Size = new System.Drawing.Size(70, 22);
-            this.table.TabIndex = 8;
-            this.table.Text = "label3";
+            table.AutoSize = true;
+            table.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            table.Location = new System.Drawing.Point(93, 50);
+            table.Name = "table";
+            table.Size = new System.Drawing.Size(70, 22);
+            table.TabIndex = 8;
+            table.Text = "label3";
             // 
             // tpln
             // 
-            this.tpln.AutoSize = true;
-            this.tpln.Location = new System.Drawing.Point(904, 314);
-            this.tpln.Name = "tpln";
-            this.tpln.Size = new System.Drawing.Size(70, 22);
-            this.tpln.TabIndex = 9;
-            this.tpln.Text = "label3";
+            tpln.AutoSize = true;
+            tpln.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            tpln.Location = new System.Drawing.Point(904, 314);
+            tpln.Name = "tpln";
+            tpln.Size = new System.Drawing.Size(25, 28);
+            tpln.TabIndex = 9;
+            tpln.Text = "0";
             // 
             // ironc
             // 
-            this.ironc.AutoSize = true;
-            this.ironc.Location = new System.Drawing.Point(904, 347);
-            this.ironc.Name = "ironc";
-            this.ironc.Size = new System.Drawing.Size(70, 22);
-            this.ironc.TabIndex = 10;
-            this.ironc.Text = "label4";
+            ironc.AutoSize = true;
+            ironc.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            ironc.Location = new System.Drawing.Point(904, 347);
+            ironc.Name = "ironc";
+            ironc.Size = new System.Drawing.Size(25, 28);
+            ironc.TabIndex = 10;
+            ironc.Text = "0";
             // 
             // coalc
             // 
-            this.coalc.AutoSize = true;
-            this.coalc.Location = new System.Drawing.Point(904, 381);
-            this.coalc.Name = "coalc";
-            this.coalc.Size = new System.Drawing.Size(70, 22);
-            this.coalc.TabIndex = 11;
-            this.coalc.Text = "label5";
+            coalc.AutoSize = true;
+            coalc.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            coalc.Location = new System.Drawing.Point(904, 381);
+            coalc.Name = "coalc";
+            coalc.Size = new System.Drawing.Size(25, 28);
+            coalc.TabIndex = 11;
+            coalc.Text = "0";
             // 
             // concreatc
             // 
-            this.concreatc.AutoSize = true;
-            this.concreatc.Location = new System.Drawing.Point(904, 415);
-            this.concreatc.Name = "concreatc";
-            this.concreatc.Size = new System.Drawing.Size(70, 22);
-            this.concreatc.TabIndex = 12;
-            this.concreatc.Text = "label6";
+            concreatc.AutoSize = true;
+            concreatc.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            concreatc.Location = new System.Drawing.Point(904, 415);
+            concreatc.Name = "concreatc";
+            concreatc.Size = new System.Drawing.Size(25, 28);
+            concreatc.TabIndex = 12;
+            concreatc.Text = "0";
             // 
             // waterc
             // 
-            this.waterc.AutoSize = true;
-            this.waterc.Location = new System.Drawing.Point(904, 450);
-            this.waterc.Name = "waterc";
-            this.waterc.Size = new System.Drawing.Size(70, 22);
-            this.waterc.TabIndex = 13;
-            this.waterc.Text = "label7";
+            waterc.AutoSize = true;
+            waterc.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            waterc.Location = new System.Drawing.Point(904, 450);
+            waterc.Name = "waterc";
+            waterc.Size = new System.Drawing.Size(25, 28);
+            waterc.TabIndex = 13;
+            waterc.Text = "0";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(782, 314);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 22);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Type:";
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label3.Location = new System.Drawing.Point(782, 314);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(77, 28);
+            label3.TabIndex = 14;
+            label3.Text = "Type:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(782, 347);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 22);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Iron:";
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label4.Location = new System.Drawing.Point(782, 347);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(77, 28);
+            label4.TabIndex = 15;
+            label4.Text = "Iron:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(782, 381);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 22);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Coal:";
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label5.Location = new System.Drawing.Point(782, 381);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(77, 28);
+            label5.TabIndex = 16;
+            label5.Text = "Coal:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(782, 415);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 22);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Concreat:";
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label6.Location = new System.Drawing.Point(782, 415);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(129, 28);
+            label6.TabIndex = 17;
+            label6.Text = "Concreat:";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(782, 450);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 22);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Water:";
+            label7.AutoSize = true;
+            label7.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label7.Location = new System.Drawing.Point(782, 450);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(90, 28);
+            label7.TabIndex = 18;
+            label7.Text = "Water:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label8.Location = new System.Drawing.Point(782, 270);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(129, 28);
+            label8.TabIndex = 19;
+            label8.Text = "Resorses:";
             // 
             // mapOfMars
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 660);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.waterc);
-            this.Controls.Add(this.concreatc);
-            this.Controls.Add(this.coalc);
-            this.Controls.Add(this.ironc);
-            this.Controls.Add(this.tpln);
-            this.Controls.Add(this.table);
-            this.Controls.Add(this.numbers);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.l);
-            this.Controls.Add(this.c);
-            this.Controls.Add(this.rece);
-            this.Controls.Add(this.next);
-            this.Controls.Add(this.confirm);
-            this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "mapOfMars";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.mapOfMars_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(255, 128, 0);
+            ClientSize = new System.Drawing.Size(1143, 660);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(waterc);
+            Controls.Add(concreatc);
+            Controls.Add(coalc);
+            Controls.Add(ironc);
+            Controls.Add(tpln);
+            Controls.Add(table);
+            Controls.Add(numbers);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(l);
+            Controls.Add(c);
+            Controls.Add(rece);
+            Controls.Add(next);
+            Controls.Add(confirm);
+            Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "mapOfMars";
+            Text = "Form1";
+            Load += mapOfMars_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -275,6 +309,7 @@ namespace MX2
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 

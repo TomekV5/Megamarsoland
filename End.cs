@@ -15,11 +15,19 @@ namespace MX2
         public End()
         {
             InitializeComponent();
+            score.Text = mapOfMars.buifingcon.ToString();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            Hide();
+            mapOfMars mapOfMars = new mapOfMars();
+            mapOfMars.ShowDialog();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

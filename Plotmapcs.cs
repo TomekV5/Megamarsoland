@@ -21,11 +21,12 @@ namespace MX2
         public Plotmapcs(int money, int coal, int iron, int concreat, int water)
         {
             InitializeComponent();
+            confirm.Hide();
             mt = money;
-            i=iron;
-            co=coal;
-            cr=concreat;
-            w=water;
+            i = iron;
+            co = coal;
+            cr = concreat;
+            w = water;
             string temp = "";
             char t = 'A';
             for (int i = (int)t - 1; i < (int)t + mapOfMars.yourLmap.GetLength(0); i++)
@@ -50,10 +51,11 @@ namespace MX2
                 temp += "\n";
             }
             table.Text = temp;
-            ironc.Text=i.ToString()+"I";
-            coalc.Text=co.ToString()+"C";
-            concreatc.Text=cr.ToString()+"CR";
-            waterc.Text=w.ToString()+"W";
+            ironc.Text = i.ToString() + "I";
+            coalc.Text = co.ToString() + "C";
+            concreatc.Text = cr.ToString() + "CR";
+            waterc.Text = w.ToString() + "W";
+            moneyt.Text = mt.ToString() + "$";
         }
 
         private void rece_Click(object sender, EventArgs e)
@@ -74,6 +76,7 @@ namespace MX2
                 mapOfMars.yourLmap[int.Parse(l.Text) - 1, (int)c.Text[0] - (int)t] = mapOfMars.resorsLmap[int.Parse(l.Text) - 1, (int)c.Text[0] - (int)t];
                 resorstext.Text = mapOfMars.yourLmap[int.Parse(l.Text), (int)c.Text[0] - (int)t];
             }
+            confirm.Show();
         }
 
         private void confirm_Click(object sender, EventArgs e)
@@ -82,7 +85,7 @@ namespace MX2
             Hide();
             mapOfMars.x = int.Parse(l.Text) - 1;
             mapOfMars.y = (int)c.Text[0] - (int)t;
-            SmalPlot smalPlot = new SmalPlot(mt,co,i,cr,w);
+            SmalPlot smalPlot = new SmalPlot(mt, co, i, cr, w);
             smalPlot.ShowDialog();
         }
     }

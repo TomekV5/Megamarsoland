@@ -16,6 +16,10 @@ namespace MX2
         public Buy()
         {
             InitializeComponent();
+            ironc.Text = SmalPlot.i.ToString() + "I";
+            coalc.Text = SmalPlot.co.ToString() + "C";
+            concreatc.Text = SmalPlot.cr.ToString() + "CR";
+            waterc.Text = SmalPlot.w.ToString() + "W";
             yourmoneytext.Hide();
             you.Hide();
             totla.Hide();
@@ -69,15 +73,31 @@ namespace MX2
             fff.Show();
             finish.Show();
             you.Text = SmalPlot.mt.ToString();
-            tooo.Text=spend.ToString();
-            fff.Text=(SmalPlot.mt-spend).ToString();
+            tooo.Text = spend.ToString();
+            if (SmalPlot.mt - spend < 0)
+            {
+                MessageBox.Show("You can not do that!");
+                irontotal.Text = "0$";
+                coaltotal.Text = "0$";
+                cocreattotal.Text = "0$";
+                watertotal.Text = "0$";
+                total.Text = "0$";
+                numericUpDownIron.Value = 0;
+                numericUpDownCoal.Value = 0;
+                numericUpDownConcreat.Value = 0;
+                numericUpDownWater.Value = 0;
+                fff.Text = "0";
+                tooo.Text = "0";
+                spend = 0;
+            }
+            else fff.Text = (SmalPlot.mt - spend).ToString();
 
         }
 
         private void finish_Click(object sender, EventArgs e)
         {
             Hide();
-            SmalPlot smalPlot = new SmalPlot(int.Parse(fff.Text),SmalPlot.co+(int)numericUpDownCoal.Value,SmalPlot.i+(int)numericUpDownIron.Value, SmalPlot.cr+(int)numericUpDownConcreat.Value,SmalPlot.w+(int)numericUpDownWater.Value);
+            SmalPlot smalPlot = new SmalPlot(int.Parse(fff.Text), SmalPlot.co + (int)numericUpDownCoal.Value, SmalPlot.i + (int)numericUpDownIron.Value, SmalPlot.cr + (int)numericUpDownConcreat.Value, SmalPlot.w + (int)numericUpDownWater.Value);
             smalPlot.ShowDialog();
         }
     }

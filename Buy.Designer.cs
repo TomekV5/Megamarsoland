@@ -30,389 +30,436 @@ namespace MX2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buy));
-            this.clear = new System.Windows.Forms.Button();
-            this.sum = new System.Windows.Forms.Button();
-            this.buyyy = new System.Windows.Forms.Button();
-            this.finish = new System.Windows.Forms.Button();
-            this.iron = new System.Windows.Forms.Label();
-            this.coal = new System.Windows.Forms.Label();
-            this.concreat = new System.Windows.Forms.Label();
-            this.water = new System.Windows.Forms.Label();
-            this.numericUpDownIron = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownCoal = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownConcreat = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownWater = new System.Windows.Forms.NumericUpDown();
-            this.ironmoney = new System.Windows.Forms.Label();
-            this.coalmoney = new System.Windows.Forms.Label();
-            this.concreatmoney = new System.Windows.Forms.Label();
-            this.watermoney = new System.Windows.Forms.Label();
-            this.irontotal = new System.Windows.Forms.Label();
-            this.coaltotal = new System.Windows.Forms.Label();
-            this.cocreattotal = new System.Windows.Forms.Label();
-            this.watertotal = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.total = new System.Windows.Forms.Label();
-            this.yourmoneytext = new System.Windows.Forms.Label();
-            this.totla = new System.Windows.Forms.Label();
-            this.finalmoney = new System.Windows.Forms.Label();
-            this.you = new System.Windows.Forms.Label();
-            this.tooo = new System.Windows.Forms.Label();
-            this.fff = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bt = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIron)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCoal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConcreat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWater)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            clear = new System.Windows.Forms.Button();
+            sum = new System.Windows.Forms.Button();
+            buyyy = new System.Windows.Forms.Button();
+            finish = new System.Windows.Forms.Button();
+            iron = new System.Windows.Forms.Label();
+            coal = new System.Windows.Forms.Label();
+            concreat = new System.Windows.Forms.Label();
+            water = new System.Windows.Forms.Label();
+            numericUpDownIron = new System.Windows.Forms.NumericUpDown();
+            numericUpDownCoal = new System.Windows.Forms.NumericUpDown();
+            numericUpDownConcreat = new System.Windows.Forms.NumericUpDown();
+            numericUpDownWater = new System.Windows.Forms.NumericUpDown();
+            ironmoney = new System.Windows.Forms.Label();
+            coalmoney = new System.Windows.Forms.Label();
+            concreatmoney = new System.Windows.Forms.Label();
+            watermoney = new System.Windows.Forms.Label();
+            irontotal = new System.Windows.Forms.Label();
+            coaltotal = new System.Windows.Forms.Label();
+            cocreattotal = new System.Windows.Forms.Label();
+            watertotal = new System.Windows.Forms.Label();
+            label13 = new System.Windows.Forms.Label();
+            total = new System.Windows.Forms.Label();
+            yourmoneytext = new System.Windows.Forms.Label();
+            totla = new System.Windows.Forms.Label();
+            finalmoney = new System.Windows.Forms.Label();
+            you = new System.Windows.Forms.Label();
+            tooo = new System.Windows.Forms.Label();
+            fff = new System.Windows.Forms.Label();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            bt = new System.Windows.Forms.Label();
+            ironc = new System.Windows.Forms.Label();
+            coalc = new System.Windows.Forms.Label();
+            concreatc = new System.Windows.Forms.Label();
+            waterc = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownIron).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownCoal).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownConcreat).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownWater).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // clear
             // 
-            this.clear.BackColor = System.Drawing.Color.Red;
-            this.clear.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clear.Location = new System.Drawing.Point(12, 515);
-            this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(122, 47);
-            this.clear.TabIndex = 0;
-            this.clear.Text = "Clear";
-            this.clear.UseVisualStyleBackColor = false;
-            this.clear.Click += new System.EventHandler(this.clear_Click);
+            clear.BackColor = System.Drawing.Color.Red;
+            clear.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            clear.Location = new System.Drawing.Point(12, 515);
+            clear.Name = "clear";
+            clear.Size = new System.Drawing.Size(122, 47);
+            clear.TabIndex = 0;
+            clear.Text = "Clear";
+            clear.UseVisualStyleBackColor = false;
+            clear.Click += clear_Click;
             // 
             // sum
             // 
-            this.sum.BackColor = System.Drawing.Color.Red;
-            this.sum.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sum.Location = new System.Drawing.Point(162, 515);
-            this.sum.Name = "sum";
-            this.sum.Size = new System.Drawing.Size(104, 47);
-            this.sum.TabIndex = 1;
-            this.sum.Text = "Sum";
-            this.sum.UseVisualStyleBackColor = false;
-            this.sum.Click += new System.EventHandler(this.sum_Click);
+            sum.BackColor = System.Drawing.Color.Red;
+            sum.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            sum.Location = new System.Drawing.Point(162, 515);
+            sum.Name = "sum";
+            sum.Size = new System.Drawing.Size(104, 47);
+            sum.TabIndex = 1;
+            sum.Text = "Sum";
+            sum.UseVisualStyleBackColor = false;
+            sum.Click += sum_Click;
             // 
             // buyyy
             // 
-            this.buyyy.BackColor = System.Drawing.Color.Red;
-            this.buyyy.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buyyy.Location = new System.Drawing.Point(299, 515);
-            this.buyyy.Name = "buyyy";
-            this.buyyy.Size = new System.Drawing.Size(109, 47);
-            this.buyyy.TabIndex = 2;
-            this.buyyy.Text = "Buy";
-            this.buyyy.UseVisualStyleBackColor = false;
-            this.buyyy.Click += new System.EventHandler(this.buyyy_Click);
+            buyyy.BackColor = System.Drawing.Color.Red;
+            buyyy.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            buyyy.Location = new System.Drawing.Point(299, 515);
+            buyyy.Name = "buyyy";
+            buyyy.Size = new System.Drawing.Size(109, 47);
+            buyyy.TabIndex = 2;
+            buyyy.Text = "Buy";
+            buyyy.UseVisualStyleBackColor = false;
+            buyyy.Click += buyyy_Click;
             // 
             // finish
             // 
-            this.finish.BackColor = System.Drawing.Color.Red;
-            this.finish.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.finish.Location = new System.Drawing.Point(717, 515);
-            this.finish.Name = "finish";
-            this.finish.Size = new System.Drawing.Size(113, 48);
-            this.finish.TabIndex = 3;
-            this.finish.Text = "Finish";
-            this.finish.UseVisualStyleBackColor = false;
-            this.finish.Click += new System.EventHandler(this.finish_Click);
+            finish.BackColor = System.Drawing.Color.Red;
+            finish.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            finish.Location = new System.Drawing.Point(717, 515);
+            finish.Name = "finish";
+            finish.Size = new System.Drawing.Size(113, 48);
+            finish.TabIndex = 3;
+            finish.Text = "Finish";
+            finish.UseVisualStyleBackColor = false;
+            finish.Click += finish_Click;
             // 
             // iron
             // 
-            this.iron.AutoSize = true;
-            this.iron.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.iron.Location = new System.Drawing.Point(12, 94);
-            this.iron.Name = "iron";
-            this.iron.Size = new System.Drawing.Size(74, 32);
-            this.iron.TabIndex = 4;
-            this.iron.Text = "Iron";
+            iron.AutoSize = true;
+            iron.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            iron.Location = new System.Drawing.Point(12, 94);
+            iron.Name = "iron";
+            iron.Size = new System.Drawing.Size(74, 32);
+            iron.TabIndex = 4;
+            iron.Text = "Iron";
             // 
             // coal
             // 
-            this.coal.AutoSize = true;
-            this.coal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.coal.Location = new System.Drawing.Point(12, 155);
-            this.coal.Name = "coal";
-            this.coal.Size = new System.Drawing.Size(74, 32);
-            this.coal.TabIndex = 5;
-            this.coal.Text = "Coal";
+            coal.AutoSize = true;
+            coal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            coal.Location = new System.Drawing.Point(12, 155);
+            coal.Name = "coal";
+            coal.Size = new System.Drawing.Size(74, 32);
+            coal.TabIndex = 5;
+            coal.Text = "Coal";
             // 
             // concreat
             // 
-            this.concreat.AutoSize = true;
-            this.concreat.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.concreat.Location = new System.Drawing.Point(12, 218);
-            this.concreat.Name = "concreat";
-            this.concreat.Size = new System.Drawing.Size(134, 32);
-            this.concreat.TabIndex = 6;
-            this.concreat.Text = "Concreat";
+            concreat.AutoSize = true;
+            concreat.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            concreat.Location = new System.Drawing.Point(12, 218);
+            concreat.Name = "concreat";
+            concreat.Size = new System.Drawing.Size(134, 32);
+            concreat.TabIndex = 6;
+            concreat.Text = "Concreat";
             // 
             // water
             // 
-            this.water.AutoSize = true;
-            this.water.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.water.Location = new System.Drawing.Point(12, 278);
-            this.water.Name = "water";
-            this.water.Size = new System.Drawing.Size(89, 32);
-            this.water.TabIndex = 7;
-            this.water.Text = "Water";
+            water.AutoSize = true;
+            water.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            water.Location = new System.Drawing.Point(12, 278);
+            water.Name = "water";
+            water.Size = new System.Drawing.Size(89, 32);
+            water.TabIndex = 7;
+            water.Text = "Water";
             // 
             // numericUpDownIron
             // 
-            this.numericUpDownIron.Location = new System.Drawing.Point(205, 92);
-            this.numericUpDownIron.Name = "numericUpDownIron";
-            this.numericUpDownIron.Size = new System.Drawing.Size(78, 30);
-            this.numericUpDownIron.TabIndex = 8;
+            numericUpDownIron.Location = new System.Drawing.Point(205, 92);
+            numericUpDownIron.Name = "numericUpDownIron";
+            numericUpDownIron.Size = new System.Drawing.Size(78, 30);
+            numericUpDownIron.TabIndex = 8;
             // 
             // numericUpDownCoal
             // 
-            this.numericUpDownCoal.Location = new System.Drawing.Point(205, 153);
-            this.numericUpDownCoal.Name = "numericUpDownCoal";
-            this.numericUpDownCoal.Size = new System.Drawing.Size(78, 30);
-            this.numericUpDownCoal.TabIndex = 9;
+            numericUpDownCoal.Location = new System.Drawing.Point(205, 153);
+            numericUpDownCoal.Name = "numericUpDownCoal";
+            numericUpDownCoal.Size = new System.Drawing.Size(78, 30);
+            numericUpDownCoal.TabIndex = 9;
             // 
             // numericUpDownConcreat
             // 
-            this.numericUpDownConcreat.Location = new System.Drawing.Point(205, 216);
-            this.numericUpDownConcreat.Name = "numericUpDownConcreat";
-            this.numericUpDownConcreat.Size = new System.Drawing.Size(78, 30);
-            this.numericUpDownConcreat.TabIndex = 10;
+            numericUpDownConcreat.Location = new System.Drawing.Point(205, 216);
+            numericUpDownConcreat.Name = "numericUpDownConcreat";
+            numericUpDownConcreat.Size = new System.Drawing.Size(78, 30);
+            numericUpDownConcreat.TabIndex = 10;
             // 
             // numericUpDownWater
             // 
-            this.numericUpDownWater.Location = new System.Drawing.Point(205, 276);
-            this.numericUpDownWater.Name = "numericUpDownWater";
-            this.numericUpDownWater.Size = new System.Drawing.Size(78, 30);
-            this.numericUpDownWater.TabIndex = 11;
+            numericUpDownWater.Location = new System.Drawing.Point(205, 276);
+            numericUpDownWater.Name = "numericUpDownWater";
+            numericUpDownWater.Size = new System.Drawing.Size(78, 30);
+            numericUpDownWater.TabIndex = 11;
             // 
             // ironmoney
             // 
-            this.ironmoney.AutoSize = true;
-            this.ironmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ironmoney.Location = new System.Drawing.Point(152, 94);
-            this.ironmoney.Name = "ironmoney";
-            this.ironmoney.Size = new System.Drawing.Size(44, 32);
-            this.ironmoney.TabIndex = 12;
-            this.ironmoney.Text = "20";
+            ironmoney.AutoSize = true;
+            ironmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            ironmoney.Location = new System.Drawing.Point(152, 94);
+            ironmoney.Name = "ironmoney";
+            ironmoney.Size = new System.Drawing.Size(44, 32);
+            ironmoney.TabIndex = 12;
+            ironmoney.Text = "20";
             // 
             // coalmoney
             // 
-            this.coalmoney.AutoSize = true;
-            this.coalmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.coalmoney.Location = new System.Drawing.Point(152, 155);
-            this.coalmoney.Name = "coalmoney";
-            this.coalmoney.Size = new System.Drawing.Size(44, 32);
-            this.coalmoney.TabIndex = 13;
-            this.coalmoney.Text = "15";
+            coalmoney.AutoSize = true;
+            coalmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            coalmoney.Location = new System.Drawing.Point(152, 155);
+            coalmoney.Name = "coalmoney";
+            coalmoney.Size = new System.Drawing.Size(44, 32);
+            coalmoney.TabIndex = 13;
+            coalmoney.Text = "15";
             // 
             // concreatmoney
             // 
-            this.concreatmoney.AutoSize = true;
-            this.concreatmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.concreatmoney.Location = new System.Drawing.Point(152, 224);
-            this.concreatmoney.Name = "concreatmoney";
-            this.concreatmoney.Size = new System.Drawing.Size(44, 32);
-            this.concreatmoney.TabIndex = 14;
-            this.concreatmoney.Text = "10";
+            concreatmoney.AutoSize = true;
+            concreatmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            concreatmoney.Location = new System.Drawing.Point(152, 224);
+            concreatmoney.Name = "concreatmoney";
+            concreatmoney.Size = new System.Drawing.Size(44, 32);
+            concreatmoney.TabIndex = 14;
+            concreatmoney.Text = "10";
             // 
             // watermoney
             // 
-            this.watermoney.AutoSize = true;
-            this.watermoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.watermoney.Location = new System.Drawing.Point(152, 284);
-            this.watermoney.Name = "watermoney";
-            this.watermoney.Size = new System.Drawing.Size(29, 32);
-            this.watermoney.TabIndex = 15;
-            this.watermoney.Text = "5";
+            watermoney.AutoSize = true;
+            watermoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            watermoney.Location = new System.Drawing.Point(152, 284);
+            watermoney.Name = "watermoney";
+            watermoney.Size = new System.Drawing.Size(29, 32);
+            watermoney.TabIndex = 15;
+            watermoney.Text = "5";
             // 
             // irontotal
             // 
-            this.irontotal.AutoSize = true;
-            this.irontotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.irontotal.Location = new System.Drawing.Point(317, 90);
-            this.irontotal.Name = "irontotal";
-            this.irontotal.Size = new System.Drawing.Size(44, 32);
-            this.irontotal.TabIndex = 16;
-            this.irontotal.Text = "0$";
+            irontotal.AutoSize = true;
+            irontotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            irontotal.Location = new System.Drawing.Point(317, 90);
+            irontotal.Name = "irontotal";
+            irontotal.Size = new System.Drawing.Size(44, 32);
+            irontotal.TabIndex = 16;
+            irontotal.Text = "0$";
             // 
             // coaltotal
             // 
-            this.coaltotal.AutoSize = true;
-            this.coaltotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.coaltotal.Location = new System.Drawing.Point(317, 147);
-            this.coaltotal.Name = "coaltotal";
-            this.coaltotal.Size = new System.Drawing.Size(44, 32);
-            this.coaltotal.TabIndex = 17;
-            this.coaltotal.Text = "0$";
+            coaltotal.AutoSize = true;
+            coaltotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            coaltotal.Location = new System.Drawing.Point(317, 147);
+            coaltotal.Name = "coaltotal";
+            coaltotal.Size = new System.Drawing.Size(44, 32);
+            coaltotal.TabIndex = 17;
+            coaltotal.Text = "0$";
             // 
             // cocreattotal
             // 
-            this.cocreattotal.AutoSize = true;
-            this.cocreattotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cocreattotal.Location = new System.Drawing.Point(317, 216);
-            this.cocreattotal.Name = "cocreattotal";
-            this.cocreattotal.Size = new System.Drawing.Size(44, 32);
-            this.cocreattotal.TabIndex = 18;
-            this.cocreattotal.Text = "0$";
+            cocreattotal.AutoSize = true;
+            cocreattotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cocreattotal.Location = new System.Drawing.Point(317, 216);
+            cocreattotal.Name = "cocreattotal";
+            cocreattotal.Size = new System.Drawing.Size(44, 32);
+            cocreattotal.TabIndex = 18;
+            cocreattotal.Text = "0$";
             // 
             // watertotal
             // 
-            this.watertotal.AutoSize = true;
-            this.watertotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.watertotal.Location = new System.Drawing.Point(317, 278);
-            this.watertotal.Name = "watertotal";
-            this.watertotal.Size = new System.Drawing.Size(44, 32);
-            this.watertotal.TabIndex = 19;
-            this.watertotal.Text = "0$";
+            watertotal.AutoSize = true;
+            watertotal.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            watertotal.Location = new System.Drawing.Point(317, 278);
+            watertotal.Name = "watertotal";
+            watertotal.Size = new System.Drawing.Size(44, 32);
+            watertotal.TabIndex = 19;
+            watertotal.Text = "0$";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(117, 338);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(194, 32);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Total money:";
+            label13.AutoSize = true;
+            label13.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label13.Location = new System.Drawing.Point(117, 338);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(194, 32);
+            label13.TabIndex = 20;
+            label13.Text = "Total money:";
             // 
             // total
             // 
-            this.total.AutoSize = true;
-            this.total.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.total.Location = new System.Drawing.Point(317, 338);
-            this.total.Name = "total";
-            this.total.Size = new System.Drawing.Size(44, 32);
-            this.total.TabIndex = 21;
-            this.total.Text = "0$";
+            total.AutoSize = true;
+            total.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            total.Location = new System.Drawing.Point(317, 338);
+            total.Name = "total";
+            total.Size = new System.Drawing.Size(44, 32);
+            total.TabIndex = 21;
+            total.Text = "0$";
             // 
             // yourmoneytext
             // 
-            this.yourmoneytext.AutoSize = true;
-            this.yourmoneytext.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.yourmoneytext.Location = new System.Drawing.Point(205, 386);
-            this.yourmoneytext.Name = "yourmoneytext";
-            this.yourmoneytext.Size = new System.Drawing.Size(164, 32);
-            this.yourmoneytext.TabIndex = 22;
-            this.yourmoneytext.Text = "Your money";
+            yourmoneytext.AutoSize = true;
+            yourmoneytext.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            yourmoneytext.Location = new System.Drawing.Point(205, 386);
+            yourmoneytext.Name = "yourmoneytext";
+            yourmoneytext.Size = new System.Drawing.Size(164, 32);
+            yourmoneytext.TabIndex = 22;
+            yourmoneytext.Text = "Your money";
             // 
             // totla
             // 
-            this.totla.AutoSize = true;
-            this.totla.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.totla.Location = new System.Drawing.Point(376, 386);
-            this.totla.Name = "totla";
-            this.totla.Size = new System.Drawing.Size(209, 32);
-            this.totla.TabIndex = 23;
-            this.totla.Text = "- spend money";
+            totla.AutoSize = true;
+            totla.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            totla.Location = new System.Drawing.Point(376, 386);
+            totla.Name = "totla";
+            totla.Size = new System.Drawing.Size(209, 32);
+            totla.TabIndex = 23;
+            totla.Text = "- spend money";
             // 
             // finalmoney
             // 
-            this.finalmoney.AutoSize = true;
-            this.finalmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.finalmoney.Location = new System.Drawing.Point(591, 386);
-            this.finalmoney.Name = "finalmoney";
-            this.finalmoney.Size = new System.Drawing.Size(239, 32);
-            this.finalmoney.TabIndex = 24;
-            this.finalmoney.Text = "=Remainig money";
+            finalmoney.AutoSize = true;
+            finalmoney.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            finalmoney.Location = new System.Drawing.Point(591, 386);
+            finalmoney.Name = "finalmoney";
+            finalmoney.Size = new System.Drawing.Size(239, 32);
+            finalmoney.TabIndex = 24;
+            finalmoney.Text = "=Remainig money";
             // 
             // you
             // 
-            this.you.AutoSize = true;
-            this.you.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.you.Location = new System.Drawing.Point(269, 447);
-            this.you.Name = "you";
-            this.you.Size = new System.Drawing.Size(29, 32);
-            this.you.TabIndex = 25;
-            this.you.Text = "0";
+            you.AutoSize = true;
+            you.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            you.Location = new System.Drawing.Point(269, 447);
+            you.Name = "you";
+            you.Size = new System.Drawing.Size(29, 32);
+            you.TabIndex = 25;
+            you.Text = "0";
             // 
             // tooo
             // 
-            this.tooo.AutoSize = true;
-            this.tooo.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tooo.Location = new System.Drawing.Point(466, 447);
-            this.tooo.Name = "tooo";
-            this.tooo.Size = new System.Drawing.Size(29, 32);
-            this.tooo.TabIndex = 26;
-            this.tooo.Text = "0";
+            tooo.AutoSize = true;
+            tooo.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            tooo.Location = new System.Drawing.Point(466, 447);
+            tooo.Name = "tooo";
+            tooo.Size = new System.Drawing.Size(29, 32);
+            tooo.TabIndex = 26;
+            tooo.Text = "0";
             // 
             // fff
             // 
-            this.fff.AutoSize = true;
-            this.fff.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fff.Location = new System.Drawing.Point(687, 447);
-            this.fff.Name = "fff";
-            this.fff.Size = new System.Drawing.Size(29, 32);
-            this.fff.TabIndex = 27;
-            this.fff.Text = "0";
+            fff.AutoSize = true;
+            fff.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            fff.Location = new System.Drawing.Point(687, 447);
+            fff.Name = "fff";
+            fff.Size = new System.Drawing.Size(29, 32);
+            fff.TabIndex = 27;
+            fff.Text = "0";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(466, 130);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(364, 224);
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = (System.Drawing.Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            pictureBox1.Location = new System.Drawing.Point(466, 130);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(364, 224);
+            pictureBox1.TabIndex = 28;
+            pictureBox1.TabStop = false;
             // 
             // bt
             // 
-            this.bt.AutoSize = true;
-            this.bt.Font = new System.Drawing.Font("Cooper Black", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.bt.Location = new System.Drawing.Point(358, 20);
-            this.bt.Name = "bt";
-            this.bt.Size = new System.Drawing.Size(118, 42);
-            this.bt.TabIndex = 29;
-            this.bt.Text = "Bank";
+            bt.AutoSize = true;
+            bt.Font = new System.Drawing.Font("Cooper Black", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            bt.Location = new System.Drawing.Point(358, 20);
+            bt.Name = "bt";
+            bt.Size = new System.Drawing.Size(118, 42);
+            bt.TabIndex = 29;
+            bt.Text = "Bank";
+            // 
+            // ironc
+            // 
+            ironc.AutoSize = true;
+            ironc.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            ironc.Location = new System.Drawing.Point(457, 75);
+            ironc.Name = "ironc";
+            ironc.Size = new System.Drawing.Size(104, 32);
+            ironc.TabIndex = 33;
+            ironc.Text = "label1";
+            // 
+            // coalc
+            // 
+            coalc.AutoSize = true;
+            coalc.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            coalc.Location = new System.Drawing.Point(554, 75);
+            coalc.Name = "coalc";
+            coalc.Size = new System.Drawing.Size(104, 32);
+            coalc.TabIndex = 32;
+            coalc.Text = "label1";
+            // 
+            // concreatc
+            // 
+            concreatc.AutoSize = true;
+            concreatc.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            concreatc.Location = new System.Drawing.Point(652, 75);
+            concreatc.Name = "concreatc";
+            concreatc.Size = new System.Drawing.Size(104, 32);
+            concreatc.TabIndex = 31;
+            concreatc.Text = "label1";
+            // 
+            // waterc
+            // 
+            waterc.AutoSize = true;
+            waterc.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            waterc.Location = new System.Drawing.Point(752, 75);
+            waterc.Name = "waterc";
+            waterc.Size = new System.Drawing.Size(104, 32);
+            waterc.TabIndex = 30;
+            waterc.Text = "label1";
             // 
             // Buy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Goldenrod;
-            this.ClientSize = new System.Drawing.Size(856, 660);
-            this.Controls.Add(this.bt);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.fff);
-            this.Controls.Add(this.tooo);
-            this.Controls.Add(this.you);
-            this.Controls.Add(this.finalmoney);
-            this.Controls.Add(this.totla);
-            this.Controls.Add(this.yourmoneytext);
-            this.Controls.Add(this.total);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.watertotal);
-            this.Controls.Add(this.cocreattotal);
-            this.Controls.Add(this.coaltotal);
-            this.Controls.Add(this.irontotal);
-            this.Controls.Add(this.watermoney);
-            this.Controls.Add(this.concreatmoney);
-            this.Controls.Add(this.coalmoney);
-            this.Controls.Add(this.ironmoney);
-            this.Controls.Add(this.numericUpDownWater);
-            this.Controls.Add(this.numericUpDownConcreat);
-            this.Controls.Add(this.numericUpDownCoal);
-            this.Controls.Add(this.numericUpDownIron);
-            this.Controls.Add(this.water);
-            this.Controls.Add(this.concreat);
-            this.Controls.Add(this.coal);
-            this.Controls.Add(this.iron);
-            this.Controls.Add(this.finish);
-            this.Controls.Add(this.buyyy);
-            this.Controls.Add(this.sum);
-            this.Controls.Add(this.clear);
-            this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.Aqua;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Buy";
-            this.Text = "Buy";
-            this.Load += new System.EventHandler(this.Buy_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIron)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCoal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConcreat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWater)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.Goldenrod;
+            ClientSize = new System.Drawing.Size(856, 660);
+            Controls.Add(ironc);
+            Controls.Add(coalc);
+            Controls.Add(concreatc);
+            Controls.Add(waterc);
+            Controls.Add(bt);
+            Controls.Add(pictureBox1);
+            Controls.Add(fff);
+            Controls.Add(tooo);
+            Controls.Add(you);
+            Controls.Add(finalmoney);
+            Controls.Add(totla);
+            Controls.Add(yourmoneytext);
+            Controls.Add(total);
+            Controls.Add(label13);
+            Controls.Add(watertotal);
+            Controls.Add(cocreattotal);
+            Controls.Add(coaltotal);
+            Controls.Add(irontotal);
+            Controls.Add(watermoney);
+            Controls.Add(concreatmoney);
+            Controls.Add(coalmoney);
+            Controls.Add(ironmoney);
+            Controls.Add(numericUpDownWater);
+            Controls.Add(numericUpDownConcreat);
+            Controls.Add(numericUpDownCoal);
+            Controls.Add(numericUpDownIron);
+            Controls.Add(water);
+            Controls.Add(concreat);
+            Controls.Add(coal);
+            Controls.Add(iron);
+            Controls.Add(finish);
+            Controls.Add(buyyy);
+            Controls.Add(sum);
+            Controls.Add(clear);
+            Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            ForeColor = System.Drawing.Color.Aqua;
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "Buy";
+            Text = "Buy";
+            Load += Buy_Load;
+            ((System.ComponentModel.ISupportInitialize)numericUpDownIron).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownCoal).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownConcreat).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownWater).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -447,5 +494,9 @@ namespace MX2
         private System.Windows.Forms.Label fff;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label bt;
+        private System.Windows.Forms.Label ironc;
+        private System.Windows.Forms.Label coalc;
+        private System.Windows.Forms.Label concreatc;
+        private System.Windows.Forms.Label waterc;
     }
 }
