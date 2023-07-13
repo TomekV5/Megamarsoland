@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MX3
+namespace MX2
 {
     public partial class Buy : Form
     {
@@ -24,6 +24,11 @@ namespace MX3
             fff.Hide();
             finish.Hide();
             buyyy.Hide();
+        }
+
+        private void Buy_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void clear_Click(object sender, EventArgs e)
@@ -66,12 +71,13 @@ namespace MX3
             you.Text = SmalPlot.mt.ToString();
             tooo.Text=spend.ToString();
             fff.Text=(SmalPlot.mt-spend).ToString();
+
         }
 
         private void finish_Click(object sender, EventArgs e)
         {
             Hide();
-            SmalPlot smalPlot = new SmalPlot(int.Parse(fff.Text));
+            SmalPlot smalPlot = new SmalPlot(int.Parse(fff.Text),SmalPlot.co+(int)numericUpDownCoal.Value,SmalPlot.i+(int)numericUpDownIron.Value, SmalPlot.cr+(int)numericUpDownConcreat.Value,SmalPlot.w+(int)numericUpDownWater.Value);
             smalPlot.ShowDialog();
         }
     }

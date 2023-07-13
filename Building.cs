@@ -4,22 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MX3
+namespace MX2
 {
     class Building:Tail
-    {
-        private double output_power;
-        private double input_power;
-        public double Output_Power
-        {
-            get { return output_power; }
-            set { output_power = value; }
-        }
-        public double Input_power
-        {
-            get { return input_power; }
-            set { input_power = value; }
-        }
+    {        
         public Building(string type)
         {           
             if (type == "Rocket")
@@ -29,8 +17,6 @@ namespace MX3
                 Iron = 15;
                 Concreat = 0;
                 Water = 20;
-                Input_power = 0;
-                Output_Power = 5;
             }
             else if (type == "Solar Panel")
             {
@@ -39,8 +25,6 @@ namespace MX3
                 Iron = 5;
                 Concreat = 0;
                 Water = 2;
-                Input_power = 0;
-                Output_Power = 5;
             }
             else if (type == "Batery")
             {
@@ -49,8 +33,6 @@ namespace MX3
                 Iron = 10;
                 Concreat = 15;
                 Water = 0;
-                Input_power = 0;
-                Output_Power = 0;
             }
             else if (type == "Improve")
             {
@@ -59,8 +41,6 @@ namespace MX3
                 Iron = 10;
                 Concreat = 20;
                 Water = 10;
-                Input_power = 20;
-                Output_Power = 0;
             }
             else if (type == "Storage")
             {
@@ -69,18 +49,14 @@ namespace MX3
                 Iron = 10;
                 Concreat = 20;
                 Water = 0;
-                Input_power = 10;
-                Output_Power = 0;
             }
             else
             {
-                Name = "🏝";
+                Name = ":";
                 Coal = 0;
                 Iron = 0;
                 Concreat = 0;
                 Water = 0;
-                Input_power = 0;
-                Output_Power = 0;
             }
         }
     }

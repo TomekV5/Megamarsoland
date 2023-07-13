@@ -1,10 +1,19 @@
-using static System.Net.Mime.MediaTypeNames;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
-namespace MX3
+namespace MX2
 {
     public partial class mapOfMars : Form
     {
+        public static int buifingcon=0;
         public static Tail[,,,] tails = new Tail[26, 26, 3, 3];
         public static int x;
         public static int y;
@@ -67,7 +76,7 @@ namespace MX3
                 }
                 temp += "\n";
             }
-            table.Text = temp;
+            table.Text = temp;       
         }
         public static void Randomize(Tail[,,,] arr, int n, int x, int q, int y)
         {
@@ -92,16 +101,11 @@ namespace MX3
                 }
             }
         }
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void mapOfMars_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void next_Click(object sender, EventArgs e)
         {
             char t = 'A';
@@ -126,7 +130,6 @@ namespace MX3
             c.Text = "";
             l.Text = "";
         }
-
         private void confirm_Click(object sender, EventArgs e)
         {
             Hide();
@@ -185,7 +188,7 @@ namespace MX3
                     }
                 }
             }
-            Plotmapcs plotmapcs = new Plotmapcs(typesLand);
+            Plotmapcs plotmapcs = new Plotmapcs(1000,20,20,20,20);
             plotmapcs.ShowDialog();
             Close();
         }

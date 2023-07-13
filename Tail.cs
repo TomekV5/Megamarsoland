@@ -4,31 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MX3
+namespace MX2
 {
     public class Tail
     {
-        private double coal;
-        private double iron;
-        private double concreat;
-        private double water;
+        private int coal;
+        private int iron;
+        private int concreat;
+        private int water;
         private string name;
-        public double Coal
+        public int Coal
         {
             get { return coal; }
             set { coal = value; }
         }
-        public double Iron
+        public int Iron
         {
             get { return iron; }
             set { iron = value; }
         }
-        public double Concreat
+        public int Concreat
         {
             get { return concreat; }
             set { concreat = value; }
         }
-        public double Water
+        public int Water
         {
             get { return water; }
             set { water = value; }

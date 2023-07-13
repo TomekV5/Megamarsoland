@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MX3
+namespace MX2
 {
     class Concreat:Tail
     {

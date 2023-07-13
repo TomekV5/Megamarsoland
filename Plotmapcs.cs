@@ -5,77 +5,27 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
-namespace MX3
+namespace MX2
 {
     public partial class Plotmapcs : Form
     {
-        
-        //public static int x;
-        //public static int y;
-        //public static string[,] yourLmap = new string[26, 26];
-        //public static string[,] resorsLmap = new string[26, 26];
-        public Plotmapcs(TypesLand typesLand)
+        public static int mt;
+        public static int i;
+        public static int co;
+        public static int cr;
+        public static int w;
+        public Plotmapcs(int money, int coal, int iron, int concreat, int water)
         {
             InitializeComponent();
-            //for (int i = 0; i < tails.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < tails.GetLength(1); j++)
-            //    {
-            //        for (int p = 0; p < tails.GetLength(2); p++)
-            //        {
-            //            for (int m = 0; m < tails.GetLength(3); m++)
-            //            {
-            //                if (typesLand.Coal != 0)
-            //                {
-            //                    tails[i, j, p, m] = new Coal();
-            //                    typesLand.Coal--;
-            //                }
-            //                else if (typesLand.Water != 0)
-            //                {
-            //                    tails[i, j, p, m] = new Water();
-            //                    typesLand.Water--;
-            //                }
-            //                else if (typesLand.Concreat != 0)
-            //                {
-            //                    tails[i, j, p, m] = new Concreat();
-            //                    typesLand.Concreat--;
-            //                }
-            //                else if (typesLand.Iron != 0)
-            //                {
-            //                    tails[i, j, p, m] = new Iron();
-            //                    typesLand.Iron--;
-            //                }
-            //                else tails[i, j, p, m] = new Tail();
-            //            }
-            //        }
-            //    }
-            //}
-            //Randomize(tails, tails.GetLength(0), tails.GetLength(1), tails.GetLength(2), tails.GetLength(3));
-            //for (int i = 0; i < yourLmap.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < tails.GetLength(1); j++)
-            //    {
-            //        yourLmap[i, j] = ":";
-            //    }
-            //}
-            //for (int i = 0; i < resorsLmap.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < tails.GetLength(1); j++)
-            //    {
-            //        resorsLmap[i, j] = yourLmap[i, j];
-            //        for (int p = 0; p < tails.GetLength(2); p++)
-            //        {
-            //            for (int m = 0; m < tails.GetLength(3); m++)
-            //            {
-            //                if (tails[i, j, p, m].Name != ":") resorsLmap[i, j] = resorsLmap[i, j] + tails[i, j, p, m].Name;
-            //            }
-            //        }
-            //    }
-            //}
+            mt = money;
+            i=iron;
+            co=coal;
+            cr=concreat;
+            w=water;
             string temp = "";
             char t = 'A';
             for (int i = (int)t - 1; i < (int)t + mapOfMars.yourLmap.GetLength(0); i++)
@@ -90,7 +40,7 @@ namespace MX3
                 n += (i + 1).ToString() + ". ";
                 n += "\n";
             }
-            label2.Text = n;
+            numbers.Text = n;
             for (int i = 0; i < mapOfMars.yourLmap.GetLength(0); i++)
             {
                 for (int j = 0; j < mapOfMars.yourLmap.GetLength(1); j++)
@@ -99,31 +49,12 @@ namespace MX3
                 }
                 temp += "\n";
             }
-            label1.Text = temp;
+            table.Text = temp;
+            ironc.Text=i.ToString()+"I";
+            coalc.Text=co.ToString()+"C";
+            concreatc.Text=cr.ToString()+"CR";
+            waterc.Text=w.ToString()+"W";
         }
-        //public static void Randomize(Tail[,,,] arr, int n, int x, int q, int y)
-        //{
-        //    Random r = new Random();
-        //    for (int i = n - 1; i > 0; i--)
-        //    {
-        //        for (int j = x - 1; j > 0; j--)
-        //        {
-        //            for (int p = q - 1; p > 0; p--)
-        //            {
-        //                for (int m = y - 1; m > 0; m--)
-        //                {
-        //                    int r1 = r.Next(0, i + 1);
-        //                    int r2 = r.Next(0, j + 1);
-        //                    int r3 = r.Next(0, p + 1);
-        //                    int r4 = r.Next(0, m + 1);
-        //                    Tail temp = arr[i, j, p, m];
-        //                    arr[i, j, p, m] = arr[r1, r2, r3, r4];
-        //                    arr[r1, r2, r3, r4] = temp;
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
 
         private void rece_Click(object sender, EventArgs e)
         {
@@ -151,7 +82,7 @@ namespace MX3
             Hide();
             mapOfMars.x = int.Parse(l.Text) - 1;
             mapOfMars.y = (int)c.Text[0] - (int)t;
-            SmalPlot smalPlot = new SmalPlot(1000);
+            SmalPlot smalPlot = new SmalPlot(mt,co,i,cr,w);
             smalPlot.ShowDialog();
         }
     }
